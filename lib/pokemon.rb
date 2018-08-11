@@ -12,7 +12,7 @@ def initialize(id:, name:, type:, db:)
 end 
 
 def self.save(id, name, type)
-  self.exececute("INSERT INTO pokemon (id, name, type) VALUES (?, ?, ?)",@id, @name, @type)
+  self.execcute("INSERT INTO pokemon (id, name, type) VALUES (?, ?, ?)",@id, @name, @type)
 
 end 
   
