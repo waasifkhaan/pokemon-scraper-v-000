@@ -17,7 +17,7 @@ def self.save(name, type, db)
   
 def self.find(id,db)
   @@all.each do |pokemon|
-  self.new(id,pokemon.name,pokemon.type,db) if pokemon.id == id
+  self.new if pokemon.id == id
 end 
   
 end 
