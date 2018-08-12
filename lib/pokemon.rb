@@ -16,7 +16,9 @@ def self.save(name, type, db)
   db.execute("INSERT INTO pokemon(name, type) VALUES (?, ?)", name, type)
 end 
 def self.find(id,db)
-  db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id )
+  result = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id )
+  binding.pry
+  self.new() 
 end 
   
  
