@@ -15,7 +15,7 @@ end
 def self.save(name, type, db)
   db.execute("INSERT INTO pokemon(name, type) VALUES (?, ?)", name, type)
   
-def self.find(name,type)
+def self.find(name,type,id)
   @@all.detect do |pokemon|
     self.new(name,type) if pokemon.id == id
   end 
