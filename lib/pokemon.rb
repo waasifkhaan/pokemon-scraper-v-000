@@ -14,7 +14,7 @@ end
 
 def self.save(name, type, db)
   db.execute("INSERT INTO pokemon(name, type) VALUES (?, ?)", name, type)
-  
+end 
 def self.find(id,db)
   db.execute("SELECT name,type from pokemon WHERE pokemon.id == id")
 end 
