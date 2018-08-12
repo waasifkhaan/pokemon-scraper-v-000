@@ -19,9 +19,9 @@ def self.find(id,db)
   db.execute("SELECT name,type from pokemon WHERE pokemon.id == id")
 end 
   
-end 
+ 
 
-end 
+ 
   
 end 
 
